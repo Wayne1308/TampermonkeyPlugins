@@ -16,7 +16,7 @@
         console.log('加载脚本');
         $('.site-name, .logo').css('display', 'none')
         setTimeout(function() {
-            $('title').text('test Wayne')
+            $('title').text('Wayne Test')
             const list = $('.content__default').children();
             if(list && $(list[49]).css('display') === 'none') {
                 list.css('display','block')
@@ -25,7 +25,7 @@
             $('.content-lock.btn-wrap').css('display', 'none')
         }, 1000)
         $(document).on('click', function(e) {
-            $('title').text('11111')
+            $('title').text('Wayne Test')
             setTimeout(function() {
                 const list = $('.content__default').children()
                 if(list && $(list[49]).css('display') === 'none') {
