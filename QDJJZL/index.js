@@ -14,9 +14,9 @@
     const $ = window.jQuery
     $(function(){
         console.log('加载脚本');
-        $('.site-name, .logo').css('display', 'none')
         setTimeout(function() {
             $('title').text('Wayne Test')
+            $('.site-name, .logo').css('display', 'none')
             const list = $('.content__default').children();
             if(list && $(list[49]).css('display') === 'none') {
                 list.css('display','block')
@@ -32,7 +32,8 @@
                     list.css('display','block')
                     list.css('opacity', 1)
                 }
-                $('.content-lock.btn-wrap').css('display', 'none')
+                $('.content-lock.btn-wrap').css('display', 'none');
+                $('.site-name, .logo').css('display', 'none')
             }, 1000)
         })
     })
